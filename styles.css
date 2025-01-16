@@ -89,3 +89,16 @@ h1 {
   font-family: Anton, Arial;
   letter-spacing: 1px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+}
+
+li > p {
+  display: flex;
+  flex-direction: column;
+}

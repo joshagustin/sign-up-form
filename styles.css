@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Anton;
+  src: 
+    url('./font/anton-regular-webfont.woff2') format('woff2'),
+    url('./font/anton-regular-webfont.woff') format('woff');
+}
+
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --sidebar-width: 30%;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar,
+.container {
+  height: 100vh;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background: url('./img/sidebar.jpg') center center / auto 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: calc(100% - var(--sidebar-width));
+}
+
+.sidebar div {
+  backdrop-filter: blur(10px);
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+img {
+  height: 60px;
+  width: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Anton, Arial;
+  letter-spacing: 1px;
+}

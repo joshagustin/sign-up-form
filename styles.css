@@ -96,9 +96,62 @@ ul {
 
 li {
   display: flex;
+  margin: 15px 0;
+  gap: 80px;
+}
+
+ul {
+  padding: 0;
+}
+
+form {
+  padding-left: 50px;
+  border: 1px solid black;
+}
+
+input {
+  width: 250px;
 }
 
 li > p {
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;;
+  flex: 1;
+}
+
+form {
+  height: 300px;
+}
+
+.container > div {
+  height: 200px;
+}
+
+input {
+  appearance: none;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:hover,
+input:active {
+  border: 1px solid #0000ff
+}
+
+input:user-invalid {
+  border: 1px solid #ff0000;
+}
+
+input:user-valid {
+  border: 1px solid #008000;
+}
+
+label {
+  font-size: 0.8rem;
 }

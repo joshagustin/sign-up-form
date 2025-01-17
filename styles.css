@@ -132,8 +132,10 @@ input {
 }
 
 input:hover,
-input:active {
-  border: 1px solid #0000ff
+input:active, 
+input:focus {
+  border: 1px solid #0000ff;
+  box-shadow: 0px 0px 10px #b0b0b0;
 }
 
 input:user-invalid {
